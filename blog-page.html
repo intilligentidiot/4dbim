@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Tesla Outsourcing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tesla: {
+                            red: '#BE1E2D',
+                            dark: '#1A1A1A',
+                            light: '#F3F4F6',
+                            gray: '#333333',
+                            'red-hover': '#9e1926',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-tesla-gray antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation (Same as Blog) -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="4d-scheduling.html" class="flex-shrink-0 flex items-center cursor-pointer">
+                    <img src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="Tesla Outsourcing Services" class="h-10 md:h-12 w-auto">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm tracking-wide uppercase">
+                    <a href="index.html" class="text-gray-600 hover:text-tesla-red transition">Home</a>
+                    <a href="blog.html" class="text-tesla-red font-bold transition">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post Header (Dynamic) -->
+    <header class="bg-tesla-dark pt-32 pb-24 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <img id="post-banner" src="" alt="Banner" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="max-w-4xl mx-auto px-6 relative z-20 text-center">
+            <span id="post-category" class="bg-tesla-red text-white font-bold text-xs uppercase px-3 py-1 rounded mb-6 inline-block tracking-widest">Category</span>
+            <h1 id="post-title" class="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight shadow-sm">Loading Article...</h1>
+            <div class="flex items-center justify-center gap-6 text-sm text-gray-300">
+                <span id="post-date"><i class="far fa-calendar-alt mr-2 text-tesla-red"></i> Date</span>
+                <span><i class="far fa-user mr-2 text-tesla-red"></i> Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-3 gap-12">
+        
+        <!-- Main Content -->
+        <main class="lg:col-span-2 bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100">
+            <div id="post-content" class="prose prose-lg max-w-none text-gray-600 prose-headings:font-heading prose-headings:font-bold prose-headings:text-tesla-dark prose-a:text-tesla-red prose-strong:text-tesla-dark">
+                <!-- Content injected via JS -->
+                <p>Loading content...</p>
+            </div>
+
+            <!-- Back Button -->
+            <div class="mt-12 pt-8 border-t border-gray-100">
+                <a href="blog.html" class="inline-flex items-center text-gray-500 hover:text-tesla-red font-bold transition">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to All Articles
+                </a>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="space-y-8">
+            <!-- Reuse sidebar widgets -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-heading font-bold text-lg mb-4 text-tesla-dark flex items-center gap-2">
+                    <span class="w-1 h-6 bg-tesla-red rounded-full"></span> Recent Posts
+                </h3>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="blog-post.html?id=1" class="group flex gap-3">
+                            <div class="w-16 h-16 rounded overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=150" class="w-full h-full object-cover group-hover:scale-110 transition">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-700 group-hover:text-tesla-red leading-tight mb-1">Smart Building Revolution</h4>
+                                <span class="text-xs text-gray-400">Oct 15, 2024</span>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="blog-post.html?id=2" class="group flex gap-3">
+                            <div class="w-16 h-16 rounded overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1581094794329-cd119277f378?q=80&w=150" class="w-full h-full object-cover group-hover:scale-110 transition">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-700 group-hover:text-tesla-red leading-tight mb-1">Revit Families Guide</h4>
+                                <span class="text-xs text-gray-400">Sep 28, 2024</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer (Same) -->
+    <footer class="bg-tesla-dark text-gray-400 py-12 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="Logo" class="h-8 grayscale opacity-70 mb-4 mx-auto">
+            <p class="text-sm">&copy; 2025 Tesla Outsourcing Services LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Database & Logic -->
+    <script>
+        // Article Database
+        const posts = {
+            "1": {
+                title: "The Smart Building Revolution: How BIM and IoT Convergence is Redefining AEC",
+                category: "Technology",
+                date: "Oct 15, 2024",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">As smart cities rise, the integration of Building Information Modeling (BIM) with Internet of Things (IoT) sensors is creating "Digital Twins" that live on well past construction.</p>
+                    <p>This convergence allows facility managers to monitor building health in real-time, predict maintenance needs, and optimize energy consumption. The traditional handover of a static BIM model is being replaced by a dynamic, data-rich asset that continues to evolve.</p>
+                    <h3>The Role of 4D in Smart Buildings</h3>
+                    <p>Beyond just 3D modeling, the temporal dimension (4D) allows for the simulation of building lifecycles. When combined with live sensor data, these models become living entities. For instance, thermal sensors can feed real-time temperature data back into the BIM model, allowing the HVAC system to auto-adjust based on actual occupancy rather than theoretical schedules.</p>
+                    <p>Key takeaways include:</p>
+                    <ul>
+                        <li>Predictive maintenance scheduling based on actual component usage.</li>
+                        <li>Real-time occupancy tracking for safety and space optimization.</li>
+                        <li>Automated HVAC adjustments reducing energy costs by up to 20%.</li>
+                    </ul>
+                    <blockquote>"The future of construction isn't just about building; it's about sustaining the built environment through data."</blockquote>
+                    <p>Tesla Outsourcing Services is at the forefront of this revolution, helping clients prepare their BIM models for IoT integration from day one.</p>
+                `
+            },
+            "2": {
+                title: "Scaling Revit Family Content Creation",
+                category: "BIM Services",
+                date: "Sep 28, 2024",
+                image: "https://images.unsplash.com/photo-1581094794329-cd119277f378?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Standardized Revit families are crucial for maintaining consistency across large-scale projects. By creating a robust library of parametric families, firms can reduce modeling time by up to 40%.</p>
+                    <p>Many firms struggle with "bloated" models—files that are slow to open and crash frequently. Often, this is due to downloading low-quality manufacturer content that is over-modeled. At Tesla Outsourcing Services, we focus on creating lightweight, data-rich families.</p>
+                    <h3>Best Practices for Family Creation</h3>
+                    <p>We adhere to strict guidelines when creating families:</p>
+                    <ol>
+                        <li><strong>Minimal Geometry:</strong> Use symbolic lines for plan views to keep 3D geometry light.</li>
+                        <li><strong>Parametric Flexibility:</strong> Ensure one family can cover multiple types/sizes.</li>
+                        <li><strong>Standardized Shared Parameters:</strong> Ensure scheduling consistency across the project.</li>
+                    </ol>
+                    <p>By outsourcing your content creation, your internal team can focus on design and coordination rather than building door knobs and windows.</p>
+                `
+            },
+            "3": {
+                title: "Beyond the Model: Implementing 4D/5D BIM",
+                category: "4D Scheduling",
+                date: "Sep 10, 2024",
+                image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Moving beyond 3D visualization to accurate scheduling (4D) and cost estimation (5D) is the next frontier for complex projects.</p>
+                    <p>4D BIM integrates time-related data into the 3D model, allowing for precise visualization of construction sequences. 5D takes it a step further by adding cost data.</p>
+                    <h3>Why 5D Matters</h3>
+                    <p>Cost overruns are common in construction. 5D BIM allows for:</p>
+                    <ul>
+                        <li>Accurate cash flow forecasting.</li>
+                        <li>Instant quantity takeoffs whenever the design changes.</li>
+                        <li>Better resource allocation during the planning phase.</li>
+                    </ul>
+                `
+            },
+             "4": {
+                title: "Clash Detection Strategies with Navisworks",
+                category: "MEP Coordination",
+                date: "Aug 22, 2024",
+                image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Effective clash detection isn't just about running the software; it's about setting the right tolerances and grouping clashes intelligently.</p>
+                    <p>Running a clash test on a whole building results in thousands of false positives. We discuss strategies for prioritizing hard clashes (physical intersections) over soft clashes (clearance zones) and how to run efficient coordination meetings using Navisworks.</p>
+                `
+            },
+             "5": {
+                title: "Scan to BIM Workflow Guide",
+                category: "Scan to BIM",
+                date: "Aug 05, 2024",
+                image: "https://images.unsplash.com/photo-1590986460907-52e180e37e93?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Scan to BIM is revolutionizing renovation projects. By using laser scanning, we can capture existing conditions with millimeter accuracy.</p>
+                    <p>This guide covers the workflow from importing .rcp files to modeling complex geometry in Revit based on point cloud data. It ensures that the digital model matches the physical reality of the site perfectly.</p>
+                `
+            }
+        };
+
+        // Load Content
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+
+            // Default to ID 1 if none provided or invalid
+            const post = posts[id] || posts["1"];
+
+            if(post) {
+                document.title = post.title + " | Tesla Outsourcing Services";
+                document.getElementById('post-title').innerText = post.title;
+                document.getElementById('post-category').innerText = post.category;
+                document.getElementById('post-date').innerHTML = `<i class="far fa-calendar-alt mr-2 text-tesla-red"></i> ${post.date}`;
+                document.getElementById('post-banner').src = post.image;
+                document.getElementById('post-content').innerHTML = post.content;
+            }
+        });
+    </script>
+</body>
+</html>
