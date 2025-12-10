@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM Insights Blog | Tesla Outsourcing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tesla: {
+                            red: '#BE1E2D',
+                            dark: '#1A1A1A',
+                            light: '#F3F4F6',
+                            gray: '#333333',
+                            'red-hover': '#9e1926',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-tesla-gray antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="4d-scheduling.html" class="flex-shrink-0 flex items-center cursor-pointer">
+                    <img src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="Tesla Outsourcing Services" class="h-10 md:h-12 w-auto">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm tracking-wide uppercase">
+                    <a href="4d-scheduling.html" class="text-gray-600 hover:text-tesla-red transition">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-tesla-red transition relative group">Services</a>
+                    <a href="4d-scheduling.html#portfolio" class="text-gray-600 hover:text-tesla-red transition relative group">Portfolio</a>
+                    <a href="blog.html" class="text-tesla-red font-bold transition relative group">
+                        Blog
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-tesla-red"></span>
+                    </a>
+                    <a href="4d-scheduling.html#contact" class="bg-tesla-red text-white px-6 py-2.5 rounded hover:bg-[#9e1926] transition shadow-md">
+                        Get Quote
+                    </a>
+                </div>
+                
+                 <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-tesla-red transition">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="4d-scheduling.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-tesla-red hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-tesla-red hover:bg-gray-50 rounded-md">Services</a>
+                <a href="4d-scheduling.html#portfolio" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-tesla-red hover:bg-gray-50 rounded-md">Portfolio</a>
+                <a href="blog.html" class="block px-3 py-2 text-base font-medium text-tesla-red bg-red-50 rounded-md">Blog</a>
+                <a href="4d-scheduling.html#contact" class="block px-3 py-2 text-base font-medium text-tesla-red hover:bg-gray-50 rounded-md">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="bg-tesla-dark pt-32 pb-16 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==')] opacity-20"></div>
+        <div class="max-w-3xl mx-auto px-6 relative z-10">
+            <span class="text-tesla-red font-bold uppercase tracking-widest text-xs mb-4 block">Knowledge Hub</span>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6">Latest BIM Insights & News</h1>
+            <p class="text-gray-400 text-lg">Expert perspectives on Construction Scheduling, 4D BIM, and the future of AEC technology.</p>
+        </div>
+    </header>
+
+    <!-- Blog Content Area -->
+    <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-3 gap-12">
+        
+        <!-- Main Article Feed -->
+        <main class="lg:col-span-2 space-y-12">
+            
+            <div id="articles-container">
+                <!-- Featured Article (ID: 1) -->
+                <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 group mb-12" 
+                         data-category="Technology" 
+                         data-tags="BIM,IoT,Smart City"
+                         data-title="The Smart Building Revolution">
+                    <a href="blog-post.html?id=1" class="block relative overflow-hidden h-64 md:h-80">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt="Smart Building" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-tesla-red text-white text-xs font-bold px-3 py-1 rounded uppercase shadow-sm">Featured</div>
+                    </a>
+                    <div class="p-8">
+                        <div class="flex items-center gap-4 text-xs text-gray-500 mb-4">
+                            <span class="flex items-center"><i class="far fa-calendar-alt mr-2 text-tesla-red"></i> Oct 15, 2024</span>
+                            <span class="flex items-center"><i class="far fa-user mr-2 text-tesla-red"></i> Admin</span>
+                            <span class="flex items-center cursor-pointer hover:text-tesla-red filter-trigger" data-type="category" data-value="Technology"><i class="far fa-folder mr-2 text-tesla-red"></i> Technology</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-heading font-bold text-tesla-dark mb-4 group-hover:text-tesla-red transition">
+                            <a href="blog-post.html?id=1">The Smart Building Revolution: How BIM and IoT Convergence is Redefining AEC</a>
+                        </h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">As smart cities rise, the integration of Building Information Modeling (BIM) with Internet of Things (IoT) sensors is creating "Digital Twins" that live on well past construction...</p>
+                        <a href="blog-post.html?id=1" class="inline-flex items-center text-tesla-red font-bold hover:underline uppercase text-sm tracking-wide">Read Full Article <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Articles -->
+                <div class="grid md:grid-cols-2 gap-8" id="grid-articles">
+                    <!-- Article 2 (ID: 2) -->
+                    <article class="blog-post bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition group border border-gray-100"
+                             data-category="BIM Services"
+                             data-tags="Revit,Architecture,Standardization"
+                             data-title="Scaling Revit Family Content Creation">
+                        <a href="blog-post.html?id=2" class="block h-48 overflow-hidden relative">
+                             <img src="https://images.unsplash.com/photo-1581094794329-cd119277f378?q=80&w=800&auto=format&fit=crop" alt="Revit Families" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-6">
+                            <div class="text-xs text-gray-500 mb-2">Sep 28, 2024</div>
+                            <h3 class="text-lg font-heading font-bold text-tesla-dark mb-3 group-hover:text-tesla-red transition leading-tight">
+                                <a href="blog-post.html?id=2">Scaling Revit Family Content Creation</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Why standardized library components are the architectural keystone for US MEP & AEC Success.</p>
+                            <a href="blog-post.html?id=2" class="text-tesla-red text-xs font-bold uppercase hover:underline">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 (ID: 3) -->
+                    <article class="blog-post bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition group border border-gray-100"
+                             data-category="4D Scheduling"
+                             data-tags="Construction,4D,Planning"
+                             data-title="Beyond the Model">
+                         <a href="blog-post.html?id=3" class="block h-48 overflow-hidden relative">
+                             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="4D Scheduling" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-6">
+                            <div class="text-xs text-gray-500 mb-2">Sep 10, 2024</div>
+                            <h3 class="text-lg font-heading font-bold text-tesla-dark mb-3 group-hover:text-tesla-red transition leading-tight">
+                                <a href="blog-post.html?id=3">Beyond the Model: Implementing 4D/5D BIM</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Moving beyond 3D visualization to accurate scheduling (4D) and cost estimation (5D) for complex projects.</p>
+                            <a href="blog-post.html?id=3" class="text-tesla-red text-xs font-bold uppercase hover:underline">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 4 (ID: 4) -->
+                     <article class="blog-post bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition group border border-gray-100"
+                              data-category="MEP Coordination"
+                              data-tags="Navisworks,Clash Detection,MEP"
+                              data-title="Clash Detection Strategies">
+                         <a href="blog-post.html?id=4" class="block h-48 overflow-hidden relative">
+                             <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=800&auto=format&fit=crop" alt="Clash Detection" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-6">
+                            <div class="text-xs text-gray-500 mb-2">Aug 22, 2024</div>
+                            <h3 class="text-lg font-heading font-bold text-tesla-dark mb-3 group-hover:text-tesla-red transition leading-tight">
+                                <a href="blog-post.html?id=4">Clash Detection Strategies</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Best practices for resolving MEP vs Structural conflicts using Navisworks Manage.</p>
+                            <a href="blog-post.html?id=4" class="text-tesla-red text-xs font-bold uppercase hover:underline">Read More</a>
+                        </div>
+                    </article>
+                    
+                     <!-- Article 5 (ID: 5) -->
+                     <article class="blog-post bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition group border border-gray-100"
+                              data-category="Scan to BIM"
+                              data-tags="Point Cloud,Renovation,Revit"
+                              data-title="Scan to BIM Workflow Guide">
+                         <a href="blog-post.html?id=5" class="block h-48 overflow-hidden relative">
+                             <img src="https://images.unsplash.com/photo-1590986460907-52e180e37e93?q=80&w=800&auto=format&fit=crop" alt="Point Cloud" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-6">
+                            <div class="text-xs text-gray-500 mb-2">Aug 05, 2024</div>
+                            <h3 class="text-lg font-heading font-bold text-tesla-dark mb-3 group-hover:text-tesla-red transition leading-tight">
+                                <a href="blog-post.html?id=5">Scan to BIM Workflow Guide</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Converting Point Cloud data into accurate Revit models for renovation projects.</p>
+                            <a href="blog-post.html?id=5" class="text-tesla-red text-xs font-bold uppercase hover:underline">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- No Results & Pagination (Same as before) -->
+            <div id="no-results" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-300 mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-600">No articles found</h3>
+                <p class="text-gray-500">Try adjusting your search or filters.</p>
+                <button onclick="resetFilters()" class="mt-4 text-tesla-red font-bold hover:underline">Clear all filters</button>
+            </div>
+
+            <div id="pagination" class="flex justify-center space-x-2 pt-8">
+                <button class="px-4 py-2 bg-tesla-red text-white rounded shadow font-bold text-sm">1</button>
+                <button class="px-4 py-2 bg-white text-gray-600 border border-gray-200 rounded hover:border-tesla-red hover:text-tesla-red transition font-medium text-sm">2</button>
+                <button class="px-4 py-2 bg-white text-gray-600 border border-gray-200 rounded hover:border-tesla-red hover:text-tesla-red transition font-medium text-sm">3</button>
+                <span class="px-4 py-2 text-gray-400">...</span>
+                <button class="px-4 py-2 bg-white text-gray-600 border border-gray-200 rounded hover:border-tesla-red hover:text-tesla-red transition font-medium text-sm">Next</button>
+            </div>
+        </main>
+
+        <!-- Sidebar (Same as before) -->
+        <aside class="space-y-8">
+            <!-- Search Widget -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-heading font-bold text-lg mb-4 text-tesla-dark flex items-center gap-2">
+                    <span class="w-1 h-6 bg-tesla-red rounded-full"></span> Search
+                </h3>
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="Search articles..." class="w-full bg-gray-50 border border-gray-200 pl-4 pr-10 py-3 rounded focus:outline-none focus:border-tesla-red focus:ring-1 focus:ring-tesla-red transition text-sm">
+                    <button class="absolute right-3 top-3 text-gray-400 hover:text-tesla-red"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+             <!-- Categories Widget -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <div class="flex justify-between items-center mb-4">
+                     <h3 class="font-heading font-bold text-lg text-tesla-dark flex items-center gap-2">
+                        <span class="w-1 h-6 bg-tesla-red rounded-full"></span> Categories
+                    </h3>
+                    <button onclick="resetFilters()" class="text-xs text-gray-400 hover:text-tesla-red hidden" id="reset-cat-btn">Reset</button>
+                </div>
+                <ul class="space-y-3">
+                    <li><button class="w-full flex justify-between items-center text-gray-600 hover:text-tesla-red transition group text-sm font-medium filter-trigger" data-type="category" data-value="BIM Services"><span class="group-hover:translate-x-1 transition text-left">BIM Services</span> <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded text-xs group-hover:bg-tesla-red group-hover:text-white transition">12</span></button></li>
+                    <li><button class="w-full flex justify-between items-center text-gray-600 hover:text-tesla-red transition group text-sm font-medium filter-trigger" data-type="category" data-value="4D Scheduling"><span class="group-hover:translate-x-1 transition text-left">4D Scheduling</span> <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded text-xs group-hover:bg-tesla-red group-hover:text-white transition">5</span></button></li>
+                    <li><button class="w-full flex justify-between items-center text-gray-600 hover:text-tesla-red transition group text-sm font-medium filter-trigger" data-type="category" data-value="Scan to BIM"><span class="group-hover:translate-x-1 transition text-left">Scan to BIM</span> <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded text-xs group-hover:bg-tesla-red group-hover:text-white transition">8</span></button></li>
+                    <li><button class="w-full flex justify-between items-center text-gray-600 hover:text-tesla-red transition group text-sm font-medium filter-trigger" data-type="category" data-value="MEP Coordination"><span class="group-hover:translate-x-1 transition text-left">MEP Coordination</span> <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded text-xs group-hover:bg-tesla-red group-hover:text-white transition">10</span></button></li>
+                    <li><button class="w-full flex justify-between items-center text-gray-600 hover:text-tesla-red transition group text-sm font-medium filter-trigger" data-type="category" data-value="Technology"><span class="group-hover:translate-x-1 transition text-left">Technology</span> <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded text-xs group-hover:bg-tesla-red group-hover:text-white transition">3</span></button></li>
+                </ul>
+            </div>
+            
+            <!-- Tags Widget -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-heading font-bold text-lg mb-4 text-tesla-dark flex items-center gap-2">
+                    <span class="w-1 h-6 bg-tesla-red rounded-full"></span> Tags
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                     <button class="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded hover:bg-tesla-red hover:text-white transition filter-trigger" data-type="tag" data-value="Revit">Revit</button>
+                    <button class="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded hover:bg-tesla-red hover:text-white transition filter-trigger" data-type="tag" data-value="Navisworks">Navisworks</button>
+                    <button class="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded hover:bg-tesla-red hover:text-white transition filter-trigger" data-type="tag" data-value="Construction">Construction</button>
+                    <button class="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded hover:bg-tesla-red hover:text-white transition filter-trigger" data-type="tag" data-value="IoT">IoT</button>
+                </div>
+            </div>
+
+            <!-- Newsletter (Same) -->
+            <div class="bg-tesla-dark text-white p-6 rounded-lg shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-2 -mr-2 w-20 h-20 bg-tesla-red rounded-full opacity-20 blur-xl"></div>
+                <h3 class="font-heading font-bold text-lg mb-2 relative z-10">Subscribe to Newsletter</h3>
+                <p class="text-sm text-gray-400 mb-4 relative z-10">Get the latest BIM trends directly in your inbox.</p>
+                <form class="space-y-3 relative z-10" id="newsletter-form">
+                    <input type="email" required placeholder="Email Address" class="w-full bg-white/10 border border-white/20 text-white px-4 py-2 rounded focus:outline-none focus:border-tesla-red placeholder-gray-500 text-sm">
+                    <button type="submit" class="w-full bg-tesla-red hover:bg-[#9e1926] text-white font-bold py-2 rounded transition text-sm uppercase tracking-wide">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer (Same) -->
+    <footer class="bg-tesla-dark text-gray-400 py-12 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-8 text-left">
+             <div class="col-span-1 md:col-span-1">
+                <img src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="Logo" class="h-8 grayscale opacity-70 mb-6">
+                <p class="text-sm text-gray-500 mb-6">Delivering precision BIM solutions since 2007. We help build the future, one schedule at a time.</p>
+            </div>
+             <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-tesla-red transition">About Company</a></li>
+                    <li><a href="4d-scheduling.html#portfolio" class="hover:text-tesla-red transition">Portfolio</a></li>
+                    <li><a href="blog.html" class="hover:text-tesla-red transition text-tesla-red">Blog</a></li>
+                    <li><a href="4d-scheduling.html#contact" class="hover:text-tesla-red transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">Services</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-tesla-red transition">Architectural BIM</a></li>
+                    <li><a href="#" class="hover:text-tesla-red transition">Structural BIM</a></li>
+                    <li><a href="#" class="hover:text-tesla-red transition">MEP Coordination</a></li>
+                    <li><a href="4d-scheduling.html" class="hover:text-tesla-red transition">4D Scheduling</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt mt-1 text-tesla-red"></i>
+                        <span>123 BIM Avenue,<br>Tech District, USA</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-tesla-red"></i>
+                        <span>services@teslaoutsourcingservices.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 border-t border-gray-800 pt-8 text-center text-xs text-gray-600">
+            &copy; 2007 - 2025 Tesla Outsourcing Services LLC. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        // Search & Filter (Basic Logic Preserved)
+        const searchInput = document.getElementById('search-input');
+        const articles = document.querySelectorAll('.blog-post');
+        const noResults = document.getElementById('no-results');
+        const filterTriggers = document.querySelectorAll('.filter-trigger');
+        const resetCatBtn = document.getElementById('reset-cat-btn');
+
+        function filterArticles(searchTerm, filterType = null, filterValue = null) {
+            let visibleCount = 0;
+            const term = searchTerm.toLowerCase();
+
+            articles.forEach(article => {
+                const title = article.getAttribute('data-title').toLowerCase();
+                const category = article.getAttribute('data-category');
+                const tags = article.getAttribute('data-tags');
+                let matchesSearch = title.includes(term);
+                let matchesFilter = true;
+
+                if (filterType === 'category') matchesFilter = category === filterValue;
+                if (filterType === 'tag') matchesFilter = tags.includes(filterValue);
+
+                if (matchesSearch && matchesFilter) {
+                    article.classList.remove('hidden');
+                    article.classList.add('fade-in');
+                    setTimeout(() => article.classList.remove('fade-in'), 300);
+                    visibleCount++;
+                } else {
+                    article.classList.add('hidden');
+                }
+            });
+
+            if (visibleCount === 0) noResults.classList.remove('hidden');
+            else noResults.classList.add('hidden');
+
+            if (filterType || searchTerm) resetCatBtn.classList.remove('hidden');
+            else resetCatBtn.classList.add('hidden');
+        }
+
+        searchInput.addEventListener('keyup', (e) => filterArticles(e.target.value));
+
+        filterTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                const type = trigger.getAttribute('data-type');
+                const value = trigger.getAttribute('data-value');
+                filterTriggers.forEach(t => t.classList.remove('text-tesla-red', 'font-bold'));
+                trigger.classList.add('text-tesla-red', 'font-bold');
+                filterArticles('', type, value);
+                searchInput.value = '';
+            });
+        });
+
+        function resetFilters() {
+            searchInput.value = '';
+            filterArticles('');
+            filterTriggers.forEach(t => t.classList.remove('text-tesla-red', 'font-bold'));
+            resetCatBtn.classList.add('hidden');
+        }
+
+        // Newsletter (Visual Only)
+        document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.target.reset();
+            alert('Subscribed successfully!');
+        });
+    </script>
+</body>
+</html>
