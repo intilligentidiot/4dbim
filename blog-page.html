@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Smart Building Revolution | Tesla Outsourcing Services</title>
+    <title>Blog Post | Tesla Outsourcing Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -16,63 +14,56 @@
                 extend: {
                     colors: {
                         tesla: {
-                            red: '#DC3545', /* Matching the specific red from your screenshots */
-                            dark: '#333333',
-                            black: '#1A1A1A',
-                            gray: '#666666',
-                            light: '#F8F9FA'
+                            red: '#0284C7',
+                            dark: '#0F172A',
+                            light: '#F8FAFC',
+                            gray: '#333333',
+                            'red-hover': '#9e1926',
                         }
                     },
                     fontFamily: {
-                        sans: ['Roboto', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
                         heading: ['Oswald', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'card': '0 2px 15px rgba(0,0,0,0.05)',
                     }
                 }
             }
         }
     </script>
-    <style>
-        .toc-link.active { color: #DC3545; font-weight: 700; }
-        .accordion-content { transition: max-height 0.3s ease-out; max-height: 0; overflow: hidden; }
-        .accordion-content.open { max-height: 500px; }
-        .rotate-icon { transform: rotate(45deg); }
-    </style>
 </head>
-<body class="bg-[#FDFDFD] text-tesla-gray antialiased font-sans">
+<body class="bg-gray-50 text-tesla-gray antialiased flex flex-col min-h-screen">
 
-    <!-- Top Bar -->
-    <div class="bg-white border-b border-gray-100 py-2 hidden lg:block">
-        <div class="max-w-[1400px] mx-auto px-6 flex justify-end items-center gap-6 text-xs font-bold text-gray-600 uppercase tracking-wide">
-            <a href="#" class="hover:text-tesla-red">Pricing Model</a>
-            <a href="#" class="hover:text-tesla-red">Blog</a>
-            <a href="#" class="hover:text-tesla-red">Infographics</a>
-            <a href="#" class="hover:text-tesla-red">Career</a>
-            <a href="#contact" class="bg-tesla-red text-white px-6 py-3 hover:bg-black transition flex items-center gap-2">
-                Contact Us <i class="fas fa-arrow-right transform -rotate-45 text-[10px]"></i>
-            </a>
-        </div>
-    </div>
-    <!-- Hero Section (Matches Screenshot 1) -->
-    <header class="relative bg-[#2A2A2A] overflow-hidden min-h-[400px] flex items-center">
-        <div class="max-w-[1400px] mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="py-12 lg:pr-12">
-                <h1 class="text-3xl md:text-5xl font-heading font-bold text-white leading-tight mb-8">
-                    The Smart Building Revolution: How BIM and IoT Convergence is Redefining North American AEC
-                </h1>
+    <!-- Navigation (Same as Blog) -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="4d-scheduling.html" class="flex-shrink-0 flex items-center cursor-pointer">
+                    <img src="#" alt="Tesla Outsourcing Services" class="h-10 md:h-12 w-auto">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm tracking-wide uppercase">
+                    <a href="index.html" class="text-gray-600 hover:text-tesla-red transition">Home</a>
+                    <a href="blog.html" class="text-tesla-red font-bold transition">Blog</a>
+                </div>
             </div>
-            <div class="relative h-full min-h-[300px] lg:min-h-[450px]">
-                <img src="https://www.teslaoutsourcingservices.com/blog/wp-content/uploads/2025/11/the-smart-building-revolution.webp" 
-                     onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200'" 
-                     alt="Smart City" 
-                     class="absolute inset-0 w-full h-full object-cover rounded-l-lg shadow-2xl border-4 border-white/10">
+        </div>
+    </nav>
+
+    <!-- Post Header (Dynamic) -->
+    <header class="bg-tesla-dark pt-32 pb-24 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <img id="post-banner" src="" alt="Banner" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="max-w-4xl mx-auto px-6 relative z-20 text-center">
+            <span id="post-category" class="bg-tesla-red text-white font-bold text-xs uppercase px-3 py-1 rounded mb-6 inline-block tracking-widest">Category</span>
+            <h1 id="post-title" class="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight shadow-sm">Loading Article...</h1>
+            <div class="flex items-center justify-center gap-6 text-sm text-gray-300">
+                <span id="post-date"><i class="far fa-calendar-alt mr-2 text-tesla-red"></i> Date</span>
+                <span><i class="far fa-user mr-2 text-tesla-red"></i> Admin</span>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Grid -->
+        <!-- Main Content Grid -->
     <div class="max-w-[1400px] mx-auto px-6 py-16">
         <div class="grid lg:grid-cols-12 gap-12">
             
@@ -111,19 +102,18 @@
                 </a>
             </div>
             </aside>
-
-            <!-- Main Content (Right) -->
+      <!-- Main Content (Right) -->
             <main class="lg:col-span-9 order-1 lg:order-2">
                 <article class="prose prose-lg max-w-none text-gray-600">
                     <p class="text-lg leading-relaxed mb-8">
-                        For AEC firms in USA, the future of building design and construction is not just bricks & mortar – it is about bits and bytes. At the intersection of Building Information Modeling (BIM) and the Internet of Things (IoT) is born a powerful combination – transforming how we conceive, manage, and experience buildings. This convergence is no longer a futuristic concept – it is a real trend gaining momentum rapidly because of the demand for smarter, safer, more efficient, and occupant-centric spaces.
+                        Winning the Bid: How 4D Logistics Presentations Differentiate Contractors in a Crowded Market
                     </p>
 
                     <!-- "Did You Know" Box (Matches Screenshot 2) -->
                     <div class="bg-white border border-gray-100 rounded-lg shadow-sm p-8 my-10 border-l-[6px] border-l-tesla-red relative overflow-hidden">
                         <h4 class="font-heading font-bold text-lg text-tesla-red mb-4">Did You Know?</h4>
                         <p class="font-medium text-gray-800 m-0">
-                            North America accounted for the largest regional revenue share at over <strong>36%</strong> of the global IoT in the construction market. This illustrates strong regional investment momentum in integrated technologies like IoT-enable BIM systems—<a href="#" class="text-black underline font-bold">SOURCE</a>
+                            The average profit margin for general contractors hangs precariously between <strong>36%</strong> of the global IoT in the construction market. This illustrates strong regional investment momentum in integrated technologies like IoT-enable BIM systems—<a href="#" class="text-black underline font-bold">SOURCE</a>
                         </p>
                     </div>
 
@@ -210,148 +200,152 @@
         </div>
     </div>
 
-    <!-- Latest Blog Section (Matches Screenshot 6) -->
-    <section class="bg-[#F8F9FA] py-16 border-t border-gray-200">
-        <div class="max-w-[1400px] mx-auto px-6">
-            <h2 class="text-3xl font-heading font-bold text-black mb-2">Our Latest Blog</h2>
-            <div class="w-24 h-1 bg-tesla-red mb-10"></div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Blog Card 1 -->
-                <div class="bg-white group cursor-pointer hover:shadow-lg transition duration-300">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white font-heading font-bold text-2xl leading-tight">
-                            The Smart Building Revolution
-                        </div>
-                    </div>
-                    <div class="p-6">
-                         <div class="text-sm text-gray-500 mb-4">How BIM and IoT Convergence is Redefining North American AEC</div>
-                         <span class="inline-block bg-tesla-red text-white text-xs font-bold px-4 py-2 uppercase rounded-sm">Read More..</span>
-                    </div>
-                </div>
+    </div>
 
-                <!-- Blog Card 2 -->
-                <div class="bg-white group cursor-pointer hover:shadow-lg transition duration-300">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-cd119277f378?q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white font-heading font-bold text-2xl leading-tight">
-                            Scaling Revit Family Content
-                        </div>
-                    </div>
-                    <div class="p-6">
-                         <div class="text-sm text-gray-500 mb-4">The Architectural Keystone for US MEP & AEC</div>
-                         <span class="inline-block bg-tesla-red text-white text-xs font-bold px-4 py-2 uppercase rounded-sm">Read More..</span>
-                    </div>
-                </div>
-
-                <!-- Blog Card 3 -->
-                <div class="bg-white group cursor-pointer hover:shadow-lg transition duration-300">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white font-heading font-bold text-2xl leading-tight">
-                            Beyond the Model: 4D/5D
-                        </div>
-                    </div>
-                    <div class="p-6">
-                         <div class="text-sm text-gray-500 mb-4">Implementing Accurate Scheduling & Costing in US Infrastructure</div>
-                         <span class="inline-block bg-tesla-red text-white text-xs font-bold px-4 py-2 uppercase rounded-sm">Read More..</span>
-                    </div>
+  <!-- Footer -->
+    <footer class="bg-tesla-dark text-gray-400 pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-1 md:col-span-1">
+                <img src="#" alt="Logo" class="h-8 grayscale opacity-70 mb-6">
+                <p class="text-sm text-gray-500 mb-6">Delivering precision BIM solutions since 2007. We help build the future, one schedule at a time.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-tesla-red hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-tesla-red hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-tesla-red hover:text-white transition"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#1a1a1a] text-gray-400 pt-16 pb-8 border-t border-gray-800 text-sm mt-auto">
-        <div class="max-w-[1400px] mx-auto px-6 grid md:grid-cols-4 gap-8">
-            <div class="space-y-4">
-                <img src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="Logo" class="h-8 grayscale opacity-70">
-                <p class="text-xs leading-relaxed text-gray-500">Tesla Outsourcing Services involves a blend of CAD & BIM engineers, architects, and detailers functioning in unison to deliver comprehensive AEC solutions.</p>
-                <div class="flex space-x-2 pt-2">
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-linkedin-in"></i></a>
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-twitter"></i></a>
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-instagram"></i></a>
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-pinterest-p"></i></a>
-                     <a href="#" class="w-8 h-8 bg-[#333] flex items-center justify-center hover:bg-tesla-red hover:text-white transition rounded-sm"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-
+            
             <div>
-                <h4 class="text-white font-heading font-bold uppercase tracking-wider mb-4 text-xs">Quick Links</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="#" class="hover:text-tesla-red transition">Company Profile</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">Team Tesla</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">Pricing Model</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">Project Delivery Process</a></li>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-tesla-red transition">About Company</a></li>
+                    <li><a href="blog.html" class="hover:text-tesla-red transition">Blog</a></li>
                     <li><a href="#" class="hover:text-tesla-red transition">Contact Us</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-white font-heading font-bold uppercase tracking-wider mb-4 text-xs">Services</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="#" class="hover:text-tesla-red transition">Architectural Services</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">Structural Services</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">MEP Services</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">BIM Services</a></li>
-                    <li><a href="#" class="hover:text-tesla-red transition">Steel Detailing</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-heading font-bold uppercase tracking-wider mb-4 text-xs">Contact</h4>
-                <ul class="space-y-3 text-xs">
-                    <li class="flex gap-3">
-                        <i class="fas fa-map-marker-alt text-tesla-red mt-1"></i>
-                        <span>123 BIM Avenue, Tech District<br>USA, 90210</span>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-xs">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt mt-1 text-tesla-red"></i>
+                        <span>123 BIM Avenue,<br>Tech District, USA</span>
                     </li>
-                    <li class="flex gap-3">
-                        <i class="fas fa-envelope text-tesla-red mt-1"></i>
-                        <a href="mailto:services@teslaoutsourcingservices.com" class="hover:text-white">services@teslaoutsourcingservices.com</a>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-tesla-red"></i>
+                        <span>services@teslaoutsourcingservices.com</span>
                     </li>
-                    <li class="flex gap-3">
-                        <i class="fas fa-phone-alt text-tesla-red mt-1"></i>
-                        <a href="tel:+14169079430" class="hover:text-white">+1 416 907 9430</a>
-                    </li>
+                    <!-- <li class="flex items-center gap-3">
+                        <i class="fas fa-phone text-tesla-red"></i>
+                        <span>+1 416 907 9430</span>
+                    </li> -->
                 </ul>
             </div>
         </div>
-        <div class="max-w-[1400px] mx-auto px-6 pt-6 mt-12 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500">
-            <p>Copyright © 2007 - 2025 Tesla Outsourcing Services LLC. All Rights Reserved. | <a href="#" class="hover:text-tesla-red">Privacy Policy</a></p>
-            <div class="flex space-x-4 mt-2 md:mt-0">
-                <span>DMCA PROTECTED</span>
-            </div>
+        <div class="max-w-7xl mx-auto px-6 border-t border-gray-800 pt-8 text-center text-xs text-gray-600">
+            &copy; Tesla Outsourcing Services LLC. All Rights Reserved.
         </div>
     </footer>
 
+    JS Database & Logic
     <script>
-        function toggleAccordion(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('.fa-plus');
-            
-            // Toggle open class
-            content.classList.toggle('open');
-            content.classList.toggle('py-4'); // Add/remove padding dynamically for smooth transition
-            
-            // Toggle padding class for when it's closed to fully hide it
-            if (!content.classList.contains('open')) {
-                 content.classList.remove('py-4');
+        // Article Database
+        const posts = {
+            "1": {
+                title: "The Smart Building Revolution: How BIM and IoT Convergence is Redefining AEC",
+                category: "Technology",
+                date: "Oct 15, 2024",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">As smart cities rise, the integration of Building Information Modeling (BIM) with Internet of Things (IoT) sensors is creating "Digital Twins" that live on well past construction.</p>
+                    <p>This convergence allows facility managers to monitor building health in real-time, predict maintenance needs, and optimize energy consumption. The traditional handover of a static BIM model is being replaced by a dynamic, data-rich asset that continues to evolve.</p>
+                    <h3>The Role of 4D in Smart Buildings</h3>
+                    <p>Beyond just 3D modeling, the temporal dimension (4D) allows for the simulation of building lifecycles. When combined with live sensor data, these models become living entities. For instance, thermal sensors can feed real-time temperature data back into the BIM model, allowing the HVAC system to auto-adjust based on actual occupancy rather than theoretical schedules.</p>
+                    <p>Key takeaways include:</p>
+                    <ul>
+                        <li>Predictive maintenance scheduling based on actual component usage.</li>
+                        <li>Real-time occupancy tracking for safety and space optimization.</li>
+                        <li>Automated HVAC adjustments reducing energy costs by up to 20%.</li>
+                    </ul>
+                    <blockquote>"The future of construction isn't just about building; it's about sustaining the built environment through data."</blockquote>
+                    <p>Tesla Outsourcing Services is at the forefront of this revolution, helping clients prepare their BIM models for IoT integration from day one.</p>
+                `
+            },
+            "2": {
+                title: "Scaling Revit Family Content Creation",
+                category: "BIM Services",
+                date: "Sep 28, 2024",
+                image: "https://images.unsplash.com/photo-1581094794329-cd119277f378?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Standardized Revit families are crucial for maintaining consistency across large-scale projects. By creating a robust library of parametric families, firms can reduce modeling time by up to 40%.</p>
+                    <p>Many firms struggle with "bloated" models—files that are slow to open and crash frequently. Often, this is due to downloading low-quality manufacturer content that is over-modeled. At Tesla Outsourcing Services, we focus on creating lightweight, data-rich families.</p>
+                    <h3>Best Practices for Family Creation</h3>
+                    <p>We adhere to strict guidelines when creating families:</p>
+                    <ol>
+                        <li><strong>Minimal Geometry:</strong> Use symbolic lines for plan views to keep 3D geometry light.</li>
+                        <li><strong>Parametric Flexibility:</strong> Ensure one family can cover multiple types/sizes.</li>
+                        <li><strong>Standardized Shared Parameters:</strong> Ensure scheduling consistency across the project.</li>
+                    </ol>
+                    <p>By outsourcing your content creation, your internal team can focus on design and coordination rather than building door knobs and windows.</p>
+                `
+            },
+            "3": {
+                title: "Beyond the Model: Implementing 4D/5D BIM",
+                category: "4D Scheduling",
+                date: "Sep 10, 2024",
+                image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Moving beyond 3D visualization to accurate scheduling (4D) and cost estimation (5D) is the next frontier for complex projects.</p>
+                    <p>4D BIM integrates time-related data into the 3D model, allowing for precise visualization of construction sequences. 5D takes it a step further by adding cost data.</p>
+                    <h3>Why 5D Matters</h3>
+                    <p>Cost overruns are common in construction. 5D BIM allows for:</p>
+                    <ul>
+                        <li>Accurate cash flow forecasting.</li>
+                        <li>Instant quantity takeoffs whenever the design changes.</li>
+                        <li>Better resource allocation during the planning phase.</li>
+                    </ul>
+                `
+            },
+             "4": {
+                title: "Clash Detection Strategies with Navisworks",
+                category: "MEP Coordination",
+                date: "Aug 22, 2024",
+                image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Effective clash detection isn't just about running the software; it's about setting the right tolerances and grouping clashes intelligently.</p>
+                    <p>Running a clash test on a whole building results in thousands of false positives. We discuss strategies for prioritizing hard clashes (physical intersections) over soft clashes (clearance zones) and how to run efficient coordination meetings using Navisworks.</p>
+                `
+            },
+             "5": {
+                title: "Scan to BIM Workflow Guide",
+                category: "Scan to BIM",
+                date: "Aug 05, 2024",
+                image: "https://images.unsplash.com/photo-1590986460907-52e180e37e93?q=80&w=1200&auto=format&fit=crop",
+                content: `
+                    <p class="lead text-xl text-gray-500 mb-6">Scan to BIM is revolutionizing renovation projects. By using laser scanning, we can capture existing conditions with millimeter accuracy.</p>
+                    <p>This guide covers the workflow from importing .rcp files to modeling complex geometry in Revit based on point cloud data. It ensures that the digital model matches the physical reality of the site perfectly.</p>
+                `
             }
+        };
 
-            // Rotate icon (simulated by changing icon class or transform)
-            if (content.classList.contains('open')) {
-                icon.classList.remove('fa-plus');
-                icon.classList.add('fa-minus');
-            } else {
-                icon.classList.remove('fa-minus');
-                icon.classList.add('fa-plus');
+        // Load Content
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+
+            // Default to ID 1 if none provided or invalid
+            const post = posts[id] || posts["1"];
+
+            if(post) {
+                document.title = post.title + " | Tesla Outsourcing Services";
+                document.getElementById('post-title').innerText = post.title;
+                document.getElementById('post-category').innerText = post.category;
+                document.getElementById('post-date').innerHTML = `<i class="far fa-calendar-alt mr-2 text-tesla-red"></i> ${post.date}`;
+                document.getElementById('post-banner').src = post.image;
+                document.getElementById('post-content').innerHTML = post.content;
             }
-        }
+        });
     </script>
 </body>
 </html>
