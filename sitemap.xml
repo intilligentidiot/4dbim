@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://www.yoursite.com/index.html</loc>
+    <loc>https://www.bim4dservices.com/index.html</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.yoursite.com/blog.html</loc>
+    <loc>https://www.bim4dservices.com/blog.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://www.yoursite.com/first-blog.html</loc>
+    <loc>https://www.bim4dservices.com/guide-to-bim-implementation.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.yoursite.com/second-blog.html</loc>
+    <loc>https://www.bim4dservices.com/leveraging-bim-preconstruction.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.yoursite.com/third-blog.html</loc>
+    <loc>https://www.bim4dservices.com/mobile-bim-integration.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.yoursite.com/fourth-blog.html</loc>
+    <loc>https://www.bim4dservices.com/optimizing-model-coordination.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.yoursite.com/fifth-blog.html</loc>
+    <loc>https://www.bim4dservices.com/bim-closeout-facility-management.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
