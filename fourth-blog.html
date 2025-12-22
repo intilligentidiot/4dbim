@@ -1,15 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimizing Model Coordination: Strategies for Clash Detection and Fabrication</title>
+    <title>Optimizing Model Coordination: Clash Detection & Fabrication</title>
+    <meta name="description"
+        content="Optimizing Model Coordination: Strategies for Clash Detection, Fabrication (LOD 400), and Laser Scan Verification in BIM.">
+    <meta name="keywords"
+        content="BIM Coordination, Clash Detection, LOD 400, Prefabrication, Laser Scanning, Scan-to-BIM, Construction Technology">
+    <meta name="theme-color" content="#0284C7">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Canonical & Alternates -->
+    <link rel="canonical" href="https://www.4dbimservices.com/fourth-blog.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.4dbimservices.com/fourth-blog.html">
+    <link rel="alternate" hreflang="en" href="https://www.4dbimservices.com/fourth-blog.html">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-4d-bim.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="4D BIM">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="4D BIM Services">
+    <meta property="og:title" content="Optimizing Model Coordination">
+    <meta property="og:description" content="Strategies for Clash Detection and Fabrication.">
+    <meta property="og:image" content="https://www.4dbimservices.com/assets/images/fourth blog banner.webp">
+    <meta property="og:image:width" content="1365">
+    <meta property="og:image:height" content="768">
+    <meta property="og:image:alt" content="Clash Detection Banner">
+    <meta property="og:url" content="https://www.4dbimservices.com/fourth-blog.html">
+    <meta property="og:logo" content="https://www.4dbimservices.com/assets/images/logo-4d-bim.svg">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Optimizing Model Coordination">
+    <meta name="twitter:description" content="Strategies for Clash Detection and Fabrication.">
+    <meta name="twitter:image" content="https://www.4dbimservices.com/assets/images/fourth blog banner.webp">
+    <meta name="twitter:image:alt" content="Clash Detection Banner">
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Optimizing Model Coordination",
+          "description": "Strategies for Clash Detection and Fabrication.",
+          "image": "https://www.4dbimservices.com/assets/images/fourth blog banner.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "4D BIM Services"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "4D BIM Services",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.4dbimservices.com/assets/images/logo-4d-bim.svg"
+            }
+          },
+          "datePublished": "2023-11-15",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.4dbimservices.com/blog/fourth-blog.html"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.4dbimservices.com/"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.4dbimservices.com/blog.html"
+          }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Model Coordination",
+            "item": "https://www.4dbimservices.com/blog/fourth-blog.html"
+          }]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts: Inter for Clean Body, Oswald for Headings -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -17,7 +114,7 @@
                     colors: {
                         tesla: {
                             red: '#0284C7',
-                            dark: '#2A2A2A', 
+                            dark: '#2A2A2A',
                             black: '#111111',
                             gray: '#555555',
                             light: '#F8F9FA',
@@ -62,34 +159,70 @@
         }
     </script>
     <style>
-        .toc-link { padding-left: 12px; border-left: 2px solid transparent; transition: all 0.2s; }
-        .toc-link:hover, .toc-link.active { color: #0284C7; border-left-color: #0284C7; font-weight: 600; background: #fafafa; }
-        .nav-link { position: relative; }
-        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #0284C7; transition: width 0.3s; }
-        .nav-link:hover::after { width: 100%; }
+        .toc-link {
+            padding-left: 12px;
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .toc-link:hover,
+        .toc-link.active {
+            color: #0284C7;
+            border-left-color: #0284C7;
+            font-weight: 600;
+            background: #fafafa;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #0284C7;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
         /* Smooth anchor offset */
-        html { scroll-padding-top: 100px; }
+        html {
+            scroll-padding-top: 100px;
+        }
     </style>
 </head>
+
 <body class="bg-white text-tesla-gray antialiased font-sans">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 transition-all duration-300" id="navbar">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 transition-all duration-300"
+        id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="4d-scheduling.html" class="flex-shrink-0 flex items-center cursor-pointer group">
-                    <img src=" " alt="" class="h-10 md:h-12 w-auto group-hover:opacity-80 transition">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group"
+                    title="4D BIM Services Home">
+                    <img src="assets/images/logo-4d-bim.svg" alt="4D BIM Services Logo" width="150" height="40"
+                        class="h-10 md:h-12 w-auto group-hover:opacity-80 transition">
                 </a>
-                
+
                 <div class="hidden lg:flex space-x-8 items-center font-medium text-sm tracking-wide uppercase">
-                    <a href="4d-scheduling.html" class="text-tesla-red font-bold transition">Home</a>                  
-                    <a href="blog.html" class="text-gray-600 hover:text-tesla-red transition relative group">
+                    <a href="index.html" class="text-tesla-red font-bold transition" title="Go to Homepage">Home</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-tesla-red transition relative group"
+                        title="View Blog Posts">
                         Blog
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-tesla-red transition-all group-hover:w-full"></span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-tesla-red transition-all group-hover:w-full"></span>
                     </a>
                 </div>
-                
-                 <div class="lg:hidden">
+
+                <div class="lg:hidden">
                     <button class="text-gray-700 hover:text-tesla-red focus:outline-none">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
@@ -97,7 +230,7 @@
             </div>
         </div>
     </nav>
-  
+
 
     <!-- Hero Section -->
     <header class="relative bg-tesla-dark overflow-hidden min-h-[450px] flex items-center border-b border-gray-800">
@@ -110,7 +243,8 @@
                     Optimizing Model Coordination: Strategies for Clash Detection and Fabrication
                 </h1>
                 <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-8">
-                    If preconstruction is the "brain" of the project and field technology is the "hands," then coordination is the "nervous system" that connects them.
+                    If preconstruction is the "brain" of the project and field technology is the "hands," then
+                    coordination is the "nervous system" that connects them.
                 </p>
                 <div class="flex items-center gap-6 text-sm text-gray-400 font-medium border-t border-white/10 pt-6">
                     <span><i class="far fa-calendar-alt mr-2 text-tesla-red"></i>Aug 02, 2025</span>
@@ -118,8 +252,9 @@
                     <span><i class="far fa-clock mr-2 text-tesla-red"></i> 8 Min Read</span>
                 </div>
             </div>
-          <div class="blog-banner-img">  <img width="1024" height="576" src="
-fourth blog banner.png" class="attachment-single-post-thumbnail size-single-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" /> 
+            <div class="blog-banner-img"> <img width="1365" height="768" src="assets/images/fourth blog banner.webp"
+                    class="attachment-single-post-thumbnail size-single-post-thumbnail wp-post-image"
+                    alt="Model Coordination Banner" decoding="async" fetchpriority="high" />
             </div>
         </div>
     </header>
@@ -128,185 +263,386 @@ fourth blog banner.png" class="attachment-single-post-thumbnail size-single-post
     <div class="max-w-[1400px] mx-auto px-6 py-20">
         <!-- Changed grid layout to centered single column -->
         <div class="flex justify-center">
-            
+
             <!-- Main Content (Right) -->
             <main class="w-full max-w-4xl">
                 <!-- Breadcrumbs -->
                 <div class="text-xs font-semibold text-gray-400 mb-8 uppercase tracking-wider flex items-center gap-2">
-                    <a href="4d-scheduling.html" class="hover:text-tesla-red">Home</a> <i class="fas fa-chevron-right text-[8px]"></i> 
-                    <a href="blog.html" class="hover:text-tesla-red">Blog</a> <i class="fas fa-chevron-right text-[8px]"></i> 
+                    <a href="index.html" class="hover:text-tesla-red">Home</a> <i
+                        class="fas fa-chevron-right text-[8px]"></i>
+                    <a href="blog.html" class="hover:text-tesla-red">Blog</a> <i
+                        class="fas fa-chevron-right text-[8px]"></i>
                     <span class="text-tesla-red">Model Coordination</span>
                 </div>
 
-                <article class="prose prose-lg max-w-none text-gray-600 prose-p:leading-8 prose-p:mb-6 prose-headings:font-heading prose-headings:font-bold prose-headings:text-tesla-black">
-                    
-                    <p>If preconstruction is the "brain" of the project and field technology is the "hands," then coordination is the "nervous system" that connects them. In the traditional construction model, coordination was often a reactive process—a sheet metal foreman solving a duct conflict by hammering it flat on-site. In the BIM era, coordination is a proactive, predictive science.</p>
-                    <p>This "Spoke 3" guide dives into the technical mechanics of <strong>Model Coordination</strong>. We will move beyond the basic concept of "clash detection" to explore advanced strategies like <strong>Search Sets</strong>, <strong>Clearance Modelling</strong>, and the <strong>Macro-to-Micro</strong> workflow. We will examine how to elevate models to <strong>LOD 400 (Fabrication)</strong>, turning the virtual model into a direct driver for CNC machinery. Finally, we will look at <strong>Installation Verification</strong> using laser scanning to ensure the physical reality matches the digital plan. This is where we stop drawing lines and start modelling components that can be manufactured, shipped, and installed with zero rework.</p>
+                <article
+                    class="prose prose-lg max-w-none text-gray-600 prose-p:leading-8 prose-p:mb-6 prose-headings:font-heading prose-headings:font-bold prose-headings:text-tesla-black">
+
+                    <p>If preconstruction is the "brain" of the project and field technology is the "hands," then
+                        coordination is the "nervous system" that connects them. In the traditional construction model,
+                        coordination was often a reactive process—a sheet metal foreman solving a duct conflict by
+                        hammering it flat on-site. In the BIM era, coordination is a proactive, predictive science.</p>
+                    <p>This "Spoke 3" guide dives into the technical mechanics of <strong>Model Coordination</strong>.
+                        We will move beyond the basic concept of "clash detection" to explore advanced strategies like
+                        <strong>Search Sets</strong>, <strong>Clearance Modelling</strong>, and the
+                        <strong>Macro-to-Micro</strong> workflow. We will examine how to elevate models to <strong>LOD
+                            400 (Fabrication)</strong>, turning the virtual model into a direct driver for CNC
+                        machinery. Finally, we will look at <strong>Installation Verification</strong> using laser
+                        scanning to ensure the physical reality matches the digital plan. This is where we stop drawing
+                        lines and start modelling components that can be manufactured, shipped, and installed with zero
+                        rework.
+                    </p>
 
                     <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8 relative inline-block">
                         The Evolution of Coordination: From Light Tables to Laptops
                         <span class="absolute bottom-0 left-0 w-1/3 h-1 bg-tesla-red rounded-full"></span>
                     </h2>
-                    
+
                     <figure class="my-8">
-                        <img src="Evolution_Light_Table_to_Laptop.png" alt="Evolution of Coordination: Light Table vs Laptop" class="w-full h-auto object-cover rounded-lg shadow-md">
-                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">From the 2D light tables of the past to today's 3D federated models.</figcaption>
+                        <img src="assets/images/Evolution_Light_Table_to_Laptop.webp"
+                            alt="Evolution of Coordination: Light Table vs Laptop" loading="lazy" width="1365"
+                            height="768" class="w-full h-auto object-cover rounded-lg shadow-md">
+                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">From the 2D light tables of
+                            the past to today's 3D federated models.</figcaption>
                     </figure>
 
-                    <p>To appreciate the sophistication of modern coordination, we must understand the friction it replaced.</p>
+                    <p>To appreciate the sophistication of modern coordination, we must understand the friction it
+                        replaced.</p>
 
                     <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The "Light Table" Era</h3>
-                    <p>For decades, coordination was an analog process. The mechanical, electrical, and plumbing (MEP) subcontractors would draft their shop drawings on vellum or Mylar. They would physically meet in a trailer, stack their drawings on a light table, and look for "shadows" where lines crossed.</p>
+                    <p>For decades, coordination was an analog process. The mechanical, electrical, and plumbing (MEP)
+                        subcontractors would draft their shop drawings on vellum or Mylar. They would physically meet in
+                        a trailer, stack their drawings on a light table, and look for "shadows" where lines crossed.
+                    </p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>The Limitation:</strong> This method was inherently 2D. It could catch a duct crossing a pipe on a plan, but it could rarely identify a vertical conflict—like a pipe running through a beam—until the crew was standing on a ladder with a core drill.</li>
-                        <li><strong>The "Design Intent" Gap:</strong> Architects produced "design intent" drawings (single-line diagrams), leaving the "means and methods" to the subcontractors. This often resulted in a "first-come, first-served" mentality in the ceiling plenum, where the first trade to install claimed the best route, forcing others to make expensive diversions.</li>
+                        <li><strong>The Limitation:</strong> This method was inherently 2D. It could catch a duct
+                            crossing a pipe on a plan, but it could rarely identify a vertical conflict—like a pipe
+                            running through a beam—until the crew was standing on a ladder with a core drill.</li>
+                        <li><strong>The "Design Intent" Gap:</strong> Architects produced "design intent" drawings
+                            (single-line diagrams), leaving the "means and methods" to the subcontractors. This often
+                            resulted in a "first-come, first-served" mentality in the ceiling plenum, where the first
+                            trade to install claimed the best route, forcing others to make expensive diversions.</li>
                     </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Shift to 3D Composite Modelling</h3>
-                    <p>BIM changed the medium; more importantly, it changed the <strong>sequence</strong>. We now build the building twice: once virtually and once physically.</p>
+                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Shift to 3D Composite
+                        Modelling</h3>
+                    <p>BIM changed the medium; more importantly, it changed the <strong>sequence</strong>. We now build
+                        the building twice: once virtually and once physically.</p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>The Federated Model:</strong> We no longer stack paper; we aggregate digital files (RVT, DWG, NWC) into a single "Federated Model" (typically in Navisworks or Solibri).</li>
-                        <li><strong>Democratization of Data:</strong> In the light table era, only the foreman saw the coordination. In the BIM era, the coordination model is accessible to everyone. A pipe fitter can see exactly how their pipe weaves through the steel before they cut a single stick of unistrut.</li>
+                        <li><strong>The Federated Model:</strong> We no longer stack paper; we aggregate digital files
+                            (RVT, DWG, NWC) into a single "Federated Model" (typically in Navisworks or Solibri).</li>
+                        <li><strong>Democratization of Data:</strong> In the light table era, only the foreman saw the
+                            coordination. In the BIM era, the coordination model is accessible to everyone. A pipe
+                            fitter can see exactly how their pipe weaves through the steel before they cut a single
+                            stick of unistrut.</li>
                     </ul>
 
-                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Advanced Clash Detection Workflows</h2>
-                    <p>Clash detection is the most well-known BIM use case, but it is often executed poorly. Many teams run a "lazy" clash test—selecting "All vs. All"—and are then paralyzed by 50,000 false positives. Effective coordination requires a surgical strategy.</p>
+                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Advanced Clash Detection
+                        Workflows</h2>
+                    <p>Clash detection is the most well-known BIM use case, but it is often executed poorly. Many teams
+                        run a "lazy" clash test—selecting "All vs. All"—and are then paralyzed by 50,000 false
+                        positives. Effective coordination requires a surgical strategy.</p>
 
                     <figure class="my-8">
-                        <img src="Advanced_Clash_Detection_Interface.png" alt="Advanced Clash Detection Interface" class="w-full h-auto object-cover rounded-lg shadow-md">
-                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Identifying and resolving hard clashes before they reach the field.</figcaption>
+                        <img src="assets/images/Advanced_Clash_Detection_Interface.webp"
+                            alt="Advanced Clash Detection Interface" loading="lazy" width="1365" height="768"
+                            class="w-full h-auto object-cover rounded-lg shadow-md">
+                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Identifying and resolving hard
+                            clashes before they reach the field.</figcaption>
                     </figure>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">1. The Macro to Micro Strategy</h3>
+                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">1. The Macro to Micro
+                        Strategy</h3>
                     <p>You cannot boil the ocean. Successful coordination follows a hierarchy of importance.</p>
-                    <p><strong>Macro Coordination (The "Big Rocks"):</strong> Before worrying about 1-inch conduit, you must resolve the major systems.</p>
+                    <p><strong>Macro Coordination (The "Big Rocks"):</strong> Before worrying about 1-inch conduit, you
+                        must resolve the major systems.</p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Gravity Systems:</strong> Sanitary and storm pipes depend on slope. They cannot just "go around" an obstruction. They have the "right of way."</li>
-                        <li><strong>Large Ductwork:</strong> Main trunk lines are massive and rigid. They consume the most volume in the plenum.</li>
+                        <li><strong>Gravity Systems:</strong> Sanitary and storm pipes depend on slope. They cannot just
+                            "go around" an obstruction. They have the "right of way."</li>
+                        <li><strong>Large Ductwork:</strong> Main trunk lines are massive and rigid. They consume the
+                            most volume in the plenum.</li>
                         <li><strong>Structure:</strong> Beams and columns are immovable constraints.</li>
-                        <li><strong>Strategy:</strong> Run the first round of clashes solely between Structure, Gravity Pipe, and Large Duct. Ignore the small stuff. If the main trunk line hits a beam, that is a critical issue that stops the job.</li>
+                        <li><strong>Strategy:</strong> Run the first round of clashes solely between Structure, Gravity
+                            Pipe, and Large Duct. Ignore the small stuff. If the main trunk line hits a beam, that is a
+                            critical issue that stops the job.</li>
                     </ul>
-                    <p><strong>Micro Coordination (The "Gravel"):</strong> Once the macro systems are locked, you layer in the flexible systems.</p>
+                    <p><strong>Micro Coordination (The "Gravel"):</strong> Once the macro systems are locked, you layer
+                        in the flexible systems.</p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Pressure Piping:</strong> Water supply and hydronic heating pipes can route around obstacles using 90 or 45-degree elbows.</li>
-                        <li><strong>Conduit and Fire Protection:</strong> These are the most flexible systems (often bent by hand or utilizing flex-drops).</li>
-                        <li><strong>Strategy:</strong> Do not waste time clashing small conduit vs. small conduit. The field crews can resolve those minor conflicts easily. Focus on where these small systems hit the "Big Rocks."</li>
+                        <li><strong>Pressure Piping:</strong> Water supply and hydronic heating pipes can route around
+                            obstacles using 90 or 45-degree elbows.</li>
+                        <li><strong>Conduit and Fire Protection:</strong> These are the most flexible systems (often
+                            bent by hand or utilizing flex-drops).</li>
+                        <li><strong>Strategy:</strong> Do not waste time clashing small conduit vs. small conduit. The
+                            field crews can resolve those minor conflicts easily. Focus on where these small systems hit
+                            the "Big Rocks."</li>
                     </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">2. Search Sets vs. Selection Sets (The "Golden Rule" of Navisworks)</h3>
+                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">2. Search Sets vs. Selection
+                        Sets (The "Golden Rule" of Navisworks)</h3>
                     <p>A common mistake in Navisworks is using manual "Selection Sets."</p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>The Mistake (Selection Sets):</strong> You manually click on 50 beams and save them as "Level 1 Beams." The next week, the engineer adds 10 new beams. Your selection set is now outdated because it doesn't include the new elements. You are clashing against old data.</li>
-                        <li><strong>The Solution (Search Sets):</strong> Search Sets are dynamic queries based on data properties.
+                        <li><strong>The Mistake (Selection Sets):</strong> You manually click on 50 beams and save them
+                            as "Level 1 Beams." The next week, the engineer adds 10 new beams. Your selection set is now
+                            outdated because it doesn't include the new elements. You are clashing against old data.
+                        </li>
+                        <li><strong>The Solution (Search Sets):</strong> Search Sets are dynamic queries based on data
+                            properties.
                             <ul class="list-disc pl-6 mt-2">
-                                <li>You create a query: Find all items where "Category" = "Structural Framing" AND "Level" = "Level 1".</li>
-                                <li>When the model updates and new beams are added, the Search Set automatically grabs them because they meet the criteria. This ensures your clash tests are always comprehensive and maintenance-free.</li>
+                                <li>You create a query: Find all items where "Category" = "Structural Framing" AND
+                                    "Level" = "Level 1".</li>
+                                <li>When the model updates and new beams are added, the Search Set automatically grabs
+                                    them because they meet the criteria. This ensures your clash tests are always
+                                    comprehensive and maintenance-free.</li>
                             </ul>
                         </li>
                     </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">3. Clearance and Maintenance Modelling</h3>
-                    <p>Clash detection is not just about physical collisions; it is about <strong>operability</strong>. A variable air volume (VAV) box might fit in the ceiling, but can the facility manager open the access door to change the filter?</p>
-                    
+                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">3. Clearance and Maintenance
+                        Modelling</h3>
+                    <p>Clash detection is not just about physical collisions; it is about <strong>operability</strong>.
+                        A variable air volume (VAV) box might fit in the ceiling, but can the facility manager open the
+                        access door to change the filter?</p>
+
                     <figure class="my-8">
-                        <img src="Soft_Clash_Clearance_Modeling.png" alt="Clearance Zone Modeling for Maintenance" class="w-full h-auto object-cover rounded-lg shadow-md">
-                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Modeling invisible clearance zones prevents future maintenance headaches.</figcaption>
+                        <img src="assets/images/Soft_Clash_Clearance_Modeling.webp"
+                            alt="Clearance Zone Modeling for Maintenance" loading="lazy" width="1365" height="768"
+                            class="w-full h-auto object-cover rounded-lg shadow-md">
+                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Modeling invisible clearance
+                            zones prevents future maintenance headaches.</figcaption>
                     </figure>
 
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Modelling "Blobs":</strong> We model invisible "clearance zones" (often translucent red boxes) in front of electrical panels, valve handles, and equipment access doors.</li>
-                        <li><strong>Soft Clashes:</strong> We run a clash test of "Structure vs. Clearance Zones." If a beam hits the invisible box, it registers as a clash. This guarantees that the facility team will not have to demolish a wall just to service a breaker panel 5 years later.</li>
+                        <li><strong>Modelling "Blobs":</strong> We model invisible "clearance zones" (often translucent
+                            red boxes) in front of electrical panels, valve handles, and equipment access doors.</li>
+                        <li><strong>Soft Clashes:</strong> We run a clash test of "Structure vs. Clearance Zones." If a
+                            beam hits the invisible box, it registers as a clash. This guarantees that the facility team
+                            will not have to demolish a wall just to service a breaker panel 5 years later.</li>
                     </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">4. Grouping and Management</h3>
-                    <p>Running a test might yield 500 clashes, but they might all be caused by <strong>one</strong> issue—e.g., a single duct run crashing through 20 floor joists.</p>
+                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">4. Grouping and Management
+                    </h3>
+                    <p>Running a test might yield 500 clashes, but they might all be caused by <strong>one</strong>
+                        issue—e.g., a single duct run crashing through 20 floor joists.</p>
                     <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Clash Grouping:</strong> The coordinator must group these 20 clashes into a single issue: "Lower Main Duct trunk." This reduces the "Clash Count" from 500 to 1, providing a psychologically manageable number for the team to attack.</li>
+                        <li><strong>Clash Grouping:</strong> The coordinator must group these 20 clashes into a single
+                            issue: "Lower Main Duct trunk." This reduces the "Clash Count" from 500 to 1, providing a
+                            psychologically manageable number for the team to attack.</li>
                     </ul>
 
-                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">BIM for Fabrication (LOD 400)</h2>
-                    <p>The goal of coordination is not just a pretty picture; it is <strong>prefabrication</strong>. We want to move labour from the dangerous, uncontrolled job site to the safe, controlled environment of a shop. This requires moving the model from <strong>LOD 300 (Design Intent)</strong> to <strong>LOD 400 (Fabrication)</strong>.</p>
+                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">BIM for Fabrication (LOD
+                        400)</h2>
+                    <p>The goal of coordination is not just a pretty picture; it is <strong>prefabrication</strong>. We
+                        want to move labour from the dangerous, uncontrolled job site to the safe, controlled
+                        environment of a shop. This requires moving the model from <strong>LOD 300 (Design
+                            Intent)</strong> to <strong>LOD 400 (Fabrication)</strong>.</p>
 
                     <figure class="my-8">
-                        <img src="LOD_400_Fabrication_Spool.png" alt="LOD 400 Fabrication Spool Sheet" class="w-full h-auto object-cover rounded-lg shadow-md">
-                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Turning the model into a direct order form for CNC fabrication.</figcaption>
-                    </figure>
+                        <figure class="my-8">
+                            <img src="assets/images/LOD_400_Fabrication_Spool.webp"
+                                alt="LOD 400 Fabrication Spool Sheet" loading="lazy" width="1365" height="768"
+                                class="w-full h-auto object-cover rounded-lg shadow-md">
+                            <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Turning the model into a
+                                direct order form for CNC fabrication.</figcaption>
+                        </figure>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Engineered-to-Order (ETO) Components</h3>
-                    <p>LOD 400 models contain the exact logic of fabrication.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Sheet Metal (The Spool Sheet):</strong> A design model shows a continuous duct. A fabrication model breaks that duct into 5-foot "spools" (sections) based on the sheet metal coil size. It adds flanges, hangers, and turning vanes. These files are sent directly to the plasma cutter.</li>
-                        <li><strong>Mechanical Piping:</strong> Instead of welding pipe on a ladder, the contractor spools the system in the model. They create detailed isometric drawings for the shop. The pipe is cut, welded, and pressure-tested in the shop, then delivered to the site in 20-foot assemblies that simply bolt together.</li>
-                    </ul>
+                        <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Engineered-to-Order
+                            (ETO)
+                            Components</h3>
+                        <p>LOD 400 models contain the exact logic of fabrication.</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                            <li><strong>Sheet Metal (The Spool Sheet):</strong> A design model shows a continuous duct.
+                                A
+                                fabrication model breaks that duct into 5-foot "spools" (sections) based on the sheet
+                                metal
+                                coil size. It adds flanges, hangers, and turning vanes. These files are sent directly to
+                                the
+                                plasma cutter.</li>
+                            <li><strong>Mechanical Piping:</strong> Instead of welding pipe on a ladder, the contractor
+                                spools the system in the model. They create detailed isometric drawings for the shop.
+                                The
+                                pipe is cut, welded, and pressure-tested in the shop, then delivered to the site in
+                                20-foot
+                                assemblies that simply bolt together.</li>
+                        </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The "BIM-as-Built" Logic</h3>
-                    <p>In this workflow, the model <strong>is</strong> the order form.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>CNC Integration:</strong> The geometry from the BIM software (e.g., Revit/CADmep) is exported to standard file formats (like .MAJ or .PCF) that drive Computer Numerical Control (CNC) machines. The machine reads the file and cuts the steel or pipe to the exact millimetre derived from the coordinated model.</li>
-                        <li><strong>Waste Reduction:</strong> Because the parts are nested and cut by computer, scrap waste is virtually eliminated. This is the ultimate realization of Lean Construction.</li>
-                    </ul>
+                        <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The "BIM-as-Built" Logic
+                        </h3>
+                        <p>In this workflow, the model <strong>is</strong> the order form.</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                            <li><strong>CNC Integration:</strong> The geometry from the BIM software (e.g.,
+                                Revit/CADmep) is
+                                exported to standard file formats (like .MAJ or .PCF) that drive Computer Numerical
+                                Control
+                                (CNC) machines. The machine reads the file and cuts the steel or pipe to the exact
+                                millimetre derived from the coordinated model.</li>
+                            <li><strong>Waste Reduction:</strong> Because the parts are nested and cut by computer,
+                                scrap
+                                waste is virtually eliminated. This is the ultimate realization of Lean Construction.
+                            </li>
+                        </ul>
 
-                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Installation Verification: Closing the Loop</h2>
-                    <p>The best model in the world is useless if the field team installs it in the wrong place. We must verify that the physical reality matches the digital plan. This is where <strong>Laser Scanning (LiDAR)</strong> enters the coordination workflow.</p>
+                        <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Installation
+                            Verification:
+                            Closing the Loop</h2>
+                        <p>The best model in the world is useless if the field team installs it in the wrong place. We
+                            must
+                            verify that the physical reality matches the digital plan. This is where <strong>Laser
+                                Scanning
+                                (LiDAR)</strong> enters the coordination workflow.</p>
 
-                    <figure class="my-8">
-                        <img src="Laser_Scan_Verification.png" alt="Laser Scan Point Cloud Overlay" class="w-full h-auto object-cover rounded-lg shadow-md">
-                        <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Overlaying point clouds on the model to verify installation accuracy.</figcaption>
-                    </figure>
+                        <figure class="my-8">
+                            <figure class="my-8">
+                                <img src="assets/images/Laser_Scan_Verification.webp"
+                                    alt="Laser Scan Point Cloud Overlay" loading="lazy" width="2752" height="1536"
+                                    class="w-full h-auto object-cover rounded-lg shadow-md">
+                                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Overlaying point
+                                    clouds on the
+                                    model to verify installation accuracy.</figcaption>
+                            </figure>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Problem: Tolerance Drift</h3>
-                    <p>In a digital model, a column is perfectly vertical. In reality, concrete sags, steel twists, and humans make measuring errors. If we prefabricate a $100,000 piping rack based on the perfect model, but the concrete wall is 2 inches out of plumb, the rack won't fit.</p>
+                            <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Problem:
+                                Tolerance Drift
+                            </h3>
+                            <p>In a digital model, a column is perfectly vertical. In reality, concrete sags, steel
+                                twists, and
+                                humans make measuring errors. If we prefabricate a $100,000 piping rack based on the
+                                perfect
+                                model, but the concrete wall is 2 inches out of plumb, the rack won't fit.</p>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Laser Scanning (Scan-to-BIM)</h3>
-                    <p>Laser scanning captures the "truth" of the site. A scanner shoots millions of laser points per second, creating a "Point Cloud"—a highly accurate digital replica of the physical space.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Pre-Pour Scanning:</strong> Scan the rebar and sleeves <strong>before</strong> concrete is poured. Overlay this scan on the model to verify that every sleeve is in the correct location. If a sleeve is missed, you can fix it in minutes before the concrete truck arrives, rather than spending thousands to X-ray and core drill later.</li>
-                        <li><strong>Floor Flatness Analysis:</strong> Scan the wet concrete or the finished slab. The software generates a "heat map" showing high and low spots. This allows the team to grind down high spots or use self-levelling compound on low spots <strong>before</strong> flooring installation begins, preventing warranty claims.</li>
-                    </ul>
-
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Case Study: Intraoperative MRI Suite</h3>
-                    <p>The "BIM and Construction Management" text highlights a critical case study involving an intraoperative MRI suite.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>The Challenge:</strong> An MRI machine is a massive magnet. It hangs from a steel rail system that allows it to move between the operating room and the diagnostic room. The tolerance for these rails is incredibly tight—fractions of a millimetre. If the rails are not perfectly parallel, the magnet will jam.</li>
-                        <li><strong>The Solution:</strong> The team did not rely on tape measures. They used a laser scanner to capture the existing steel structure.
-                            <ul class="list-disc pl-6 mt-2">
-                                <li>They brought the Point Cloud into the BIM software.</li>
-                                <li>They modelled the new rail system to fit the <strong>actual</strong> (slightly imperfect) steel, not the theoretical design.</li>
-                                <li>During installation, they scanned the rails again to verify they were within the sub-millimetre tolerance required by the MRI manufacturer.</li>
+                            <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Laser Scanning
+                                (Scan-to-BIM)
+                            </h3>
+                            <p>Laser scanning captures the "truth" of the site. A scanner shoots millions of laser
+                                points per
+                                second, creating a "Point Cloud"—a highly accurate digital replica of the physical
+                                space.</p>
+                            <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                                <li><strong>Pre-Pour Scanning:</strong> Scan the rebar and sleeves
+                                    <strong>before</strong>
+                                    concrete is poured. Overlay this scan on the model to verify that every sleeve is in
+                                    the
+                                    correct location. If a sleeve is missed, you can fix it in minutes before the
+                                    concrete truck
+                                    arrives, rather than spending thousands to X-ray and core drill later.
+                                </li>
+                                <li><strong>Floor Flatness Analysis:</strong> Scan the wet concrete or the finished
+                                    slab. The
+                                    software generates a "heat map" showing high and low spots. This allows the team to
+                                    grind
+                                    down high spots or use self-levelling compound on low spots <strong>before</strong>
+                                    flooring
+                                    installation begins, preventing warranty claims.</li>
                             </ul>
-                        </li>
-                        <li><strong>The Result:</strong> The rails were installed perfectly on the first try. The MRI machine was commissioned without delay. Without scanning, the team would likely have faced weeks of rework and "shimming" to get the rails straight.</li>
-                    </ul>
 
-                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Detailed Coordination Management: The "Clash Meeting"</h2>
-                    <p>Technology is only 20% of the solution; the other 80% is sociology. The <strong>Weekly Coordination Meeting</strong> is where the battle is won or lost.</p>
+                            <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">Case Study:
+                                Intraoperative
+                                MRI Suite</h3>
+                            <p>The "BIM and Construction Management" text highlights a critical case study involving an
+                                intraoperative MRI suite.</p>
+                            <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                                <li><strong>The Challenge:</strong> An MRI machine is a massive magnet. It hangs from a
+                                    steel
+                                    rail system that allows it to move between the operating room and the diagnostic
+                                    room. The
+                                    tolerance for these rails is incredibly tight—fractions of a millimetre. If the
+                                    rails are
+                                    not perfectly parallel, the magnet will jam.</li>
+                                <li><strong>The Solution:</strong> The team did not rely on tape measures. They used a
+                                    laser
+                                    scanner to capture the existing steel structure.
+                                    <ul class="list-disc pl-6 mt-2">
+                                        <li>They brought the Point Cloud into the BIM software.</li>
+                                        <li>They modelled the new rail system to fit the <strong>actual</strong>
+                                            (slightly
+                                            imperfect) steel, not the theoretical design.</li>
+                                        <li>During installation, they scanned the rails again to verify they were within
+                                            the
+                                            sub-millimetre tolerance required by the MRI manufacturer.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>The Result:</strong> The rails were installed perfectly on the first try.
+                                    The MRI
+                                    machine was commissioned without delay. Without scanning, the team would likely have
+                                    faced
+                                    weeks of rework and "shimming" to get the rails straight.</li>
+                            </ul>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Rules of Engagement</h3>
-                    <p>To prevent meetings from becoming 4-hour shouting matches, strict protocols are needed.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>The "24-Hour Rule":</strong> Models must be uploaded 24 hours before the meeting. The BIM Manager runs the clash detection <strong>overnight</strong>. The report is sent to all subcontractors the morning of the meeting.</li>
-                        <li><strong>The "Accountability Seat":</strong> When a clash is reviewed (e.g., Duct vs. Pipe), the software shows <strong>who</strong> owns the object. The question is simple: "Bob, your duct is hitting Alice's pipe. Can you move up?"</li>
-                        <li><strong>The "Model-First" Culture:</strong> If a subcontractor says, "I can't move that, I've already fabricated it," but the model showed a clash for three weeks that they ignored, they are responsible for the rework cost. The model is the contract.</li>
-                    </ul>
+                            <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Detailed
+                                Coordination
+                                Management: The "Clash Meeting"</h2>
+                            <p>Technology is only 20% of the solution; the other 80% is sociology. The <strong>Weekly
+                                    Coordination Meeting</strong> is where the battle is won or lost.</p>
 
-                    <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Sign-Off Model</h3>
-                    <p>Once coordination is complete for a zone, the team must "freeze" the model.</p>
-                    <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
-                        <li><strong>Digital Sign-Off:</strong> Each subcontractor signs a document stating, "This model represents what I will install."</li>
-                        <li><strong>The "Red Zone":</strong> In the software, the status of that zone is changed to "Locked." No one is allowed to move an object in a locked zone. This prevents the "drift" where a plumber moves a pipe to fix a new issue and accidentally creates a clash in a zone that was already solved.</li>
-                    </ul>
+                            <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Rules of
+                                Engagement</h3>
+                            <p>To prevent meetings from becoming 4-hour shouting matches, strict protocols are needed.
+                            </p>
+                            <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                                <li><strong>The "24-Hour Rule":</strong> Models must be uploaded 24 hours before the
+                                    meeting.
+                                    The BIM Manager runs the clash detection <strong>overnight</strong>. The report is
+                                    sent to
+                                    all subcontractors the morning of the meeting.</li>
+                                <li><strong>The "Accountability Seat":</strong> When a clash is reviewed (e.g., Duct vs.
+                                    Pipe),
+                                    the software shows <strong>who</strong> owns the object. The question is simple:
+                                    "Bob, your
+                                    duct is hitting Alice's pipe. Can you move up?"</li>
+                                <li><strong>The "Model-First" Culture:</strong> If a subcontractor says, "I can't move
+                                    that,
+                                    I've already fabricated it," but the model showed a clash for three weeks that they
+                                    ignored,
+                                    they are responsible for the rework cost. The model is the contract.</li>
+                            </ul>
 
-                    <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Conclusion: The "Single Source of Truth"</h2>
-                    <p>Optimizing model coordination is about establishing a "Single Source of Truth." In the past, the truth was fragmented across a thousand paper drawings. Today, the Federated Model is the truth.</p>
-                    <p>By moving from reactive "field fixes" to proactive <strong>Search Sets</strong> and <strong>Macro-to-Micro</strong> analysis, we clear the path for the builders. By elevating to <strong>LOD 400</strong>, we unlock the speed of prefabrication. And by closing the loop with <strong>Laser Scanning</strong>, we ensure that our digital promises are kept in the physical world.</p>
-                    <p>This level of coordination requires discipline. It requires a BIM Manager who is not just a software jockey, but a diplomat and a construction strategist. But the reward is a project that fits together like a Swiss watch—quiet, efficient, and devoid of the chaotic "noise" of rework.</p>
+                            <h3 class="text-2xl font-heading font-bold text-tesla-black mt-12 mb-4">The Sign-Off Model
+                            </h3>
+                            <p>Once coordination is complete for a zone, the team must "freeze" the model.</p>
+                            <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-600">
+                                <li><strong>Digital Sign-Off:</strong> Each subcontractor signs a document stating,
+                                    "This model
+                                    represents what I will install."</li>
+                                <li><strong>The "Red Zone":</strong> In the software, the status of that zone is changed
+                                    to
+                                    "Locked." No one is allowed to move an object in a locked zone. This prevents the
+                                    "drift"
+                                    where a plumber moves a pipe to fix a new issue and accidentally creates a clash in
+                                    a zone
+                                    that was already solved.</li>
+                            </ul>
 
-                </article>            
+                            <h2 class="text-3xl font-heading font-bold text-tesla-black mt-16 mb-8">Conclusion: The
+                                "Single
+                                Source of Truth"</h2>
+                            <p>Optimizing model coordination is about establishing a "Single Source of Truth." In the
+                                past, the
+                                truth was fragmented across a thousand paper drawings. Today, the Federated Model is the
+                                truth.
+                            </p>
+                            <p>By moving from reactive "field fixes" to proactive <strong>Search Sets</strong> and
+                                <strong>Macro-to-Micro</strong> analysis, we clear the path for the builders. By
+                                elevating to
+                                <strong>LOD 400</strong>, we unlock the speed of prefabrication. And by closing the loop
+                                with
+                                <strong>Laser Scanning</strong>, we ensure that our digital promises are kept in the
+                                physical
+                                world.
+                            </p>
+                            <p>This level of coordination requires discipline. It requires a BIM Manager who is not just
+                                a
+                                software jockey, but a diplomat and a construction strategist. But the reward is a
+                                project that
+                                fits together like a Swiss watch—quiet, efficient, and devoid of the chaotic "noise" of
+                                rework.
+                            </p>
+
+                </article>
             </main>
         </div>
     </div>
 
-     <!-- Latest Blog Section -->
+    <!-- Latest Blog Section -->
     <section class="bg-tesla-light py-20 border-t border-gray-200">
         <div class="max-w-[1400px] mx-auto px-6">
             <h2 class="text-3xl font-heading font-bold text-tesla-black mb-2">Learn More</h2>
@@ -314,47 +650,76 @@ fourth blog banner.png" class="attachment-single-post-thumbnail size-single-post
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Blog Card 1 -->
-                <div class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
+                <div
+                    class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
                     <div class="relative h-56 overflow-hidden">
-                        <img src="first blog banner.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
-                     <a href="first-blog.html" class="hover:text-tesla-red"> The Holistic Guide to BIM Implementation</a>
+                        <img src="assets/images/first blog banner.webp" loading="lazy" width="1365" height="768"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div
+                            class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
+                            <a href="first-blog.html" class="hover:text-tesla-red" title="Read Full Article"> The
+                                Holistic Guide to BIM
+                                Implementation</a>
                         </div>
                     </div>
                     <div class="p-6 border-b border-gray-100">
-                         <p class="text-sm text-gray-500 mb-6 line-clamp-2">The Holistic Guide to BIM Implementation: From Strategic Planning to Facility Management</p>
-                         <span class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read More <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-sm text-gray-500 mb-6 line-clamp-2">The Holistic Guide to BIM Implementation:
+                            From Strategic Planning to Facility Management</p>
+                        <span
+                            class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
                 <!-- Blog Card 2 -->
-                <div class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
+                <div
+                    class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
                     <div class="relative h-56 overflow-hidden">
-                        <img src="second blog banner.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
-                           <a href="second-blog.html" class="hover:text-tesla-red"> Leveraging BIM for Preconstruction</a>
+                        <img src="assets/images/second blog banner.webp" loading="lazy" width="1365" height="768"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div
+                            class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
+                            <a href="second-blog.html" class="hover:text-tesla-red" title="Read Full Article">
+                                Leveraging BIM for
+                                Preconstruction</a>
                         </div>
                     </div>
                     <div class="p-6 border-b border-gray-100">
-                         <p class="text-sm text-gray-500 mb-6 line-clamp-2">Leveraging BIM for Preconstruction: Analysis, Scheduling, and Cost Trending</p>
-                         <span class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read More <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-sm text-gray-500 mb-6 line-clamp-2">Leveraging BIM for Preconstruction: Analysis,
+                            Scheduling, and Cost Trending</p>
+                        <span
+                            class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
 
                 <!-- Blog Card 3 -->
-                <div class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
+                <div
+                    class="bg-white group cursor-pointer shadow-sm hover:shadow-card transition duration-300 rounded overflow-hidden">
                     <div class="relative h-56 overflow-hidden">
-                        <img src="third blog banner.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
-                           <a href="third-blog.html" class="hover:text-tesla-red"> Bridging the Gap</a>
+                        <img src="assets/images/third blog banner.webp" loading="lazy" width="1365" height="768"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div
+                            class="absolute bottom-5 left-5 right-5 text-white font-heading font-bold text-xl leading-tight drop-shadow-md">
+                            <a href="third-blog.html" class="hover:text-tesla-red" title="Read Full Article"> Bridging
+                                the Gap</a>
                         </div>
                     </div>
                     <div class="p-6 border-b border-gray-100">
-                         <p class="text-sm text-gray-500 mb-6 line-clamp-2">Bridging the Gap: Integrating Mobile Technology and BIM for Field Construction</p>
-                         <span class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read More <i class="fas fa-arrow-right ml-1"></i></span>
+                        <p class="text-sm text-gray-500 mb-6 line-clamp-2">Bridging the Gap: Integrating Mobile
+                            Technology and BIM for Field Construction</p>
+                        <span
+                            class="text-tesla-red text-xs font-bold uppercase tracking-wider group-hover:underline">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></span>
                     </div>
                 </div>
             </div>
@@ -362,25 +727,31 @@ fourth blog banner.png" class="attachment-single-post-thumbnail size-single-post
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#111] text-gray-400 pt-20 pb-10 border-t border-gray-900 text-sm">
-        <div class="max-w-[1400px] mx-auto px-6 grid md:grid-cols-4 gap-12">
-            <div class="space-y-6">
-                <img src="" alt="Logo" class="h-8 grayscale opacity-60 hover:opacity-100 transition duration-300">
-                <p class="text-xs leading-relaxed text-gray-500">   involves a blend of CAD & BIM engineers, architects, and detailers functioning in unison to deliver comprehensive AEC solutions.</p>
-              </div>
+    <footer class="bg-tesla-dark text-gray-400 pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 mb-12 flex flex-col items-center text-center">
+            <div class="max-w-lg">
+                <img src="assets/images/logo-4d-bim.svg" alt="4D BIM Services Logo" width="150" height="40"
+                    loading="lazy" class="h-8 grayscale opacity-70 mb-6 mx-auto">
+                <p class="text-sm text-gray-500 mb-6">Delivering precision BIM solutions since 2007. We help build the
+                    future, one schedule at a time.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 border-t border-gray-800 pt-8 text-center text-xs text-gray-600">
+            &copy; 4D BIM Services. All Rights Reserved.
+        </div>
     </footer>
 
     <script>
         function toggleAccordion(button) {
             const content = button.nextElementSibling;
             const icon = button.querySelector('.fa-plus');
-            
+
             // Toggle open class
             content.classList.toggle('open');
-            content.classList.toggle('py-4'); 
-            
+            content.classList.toggle('py-4');
+
             if (!content.classList.contains('open')) {
-                 content.classList.remove('py-4');
+                content.classList.remove('py-4');
             }
 
             // Rotate icon (simulated by changing icon class or transform)
@@ -394,4 +765,5 @@ fourth blog banner.png" class="attachment-single-post-thumbnail size-single-post
         }
     </script>
 </body>
+
 </html>
